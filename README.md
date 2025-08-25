@@ -60,11 +60,17 @@ Identifies similar items based on how users have rated them and recommends items
 A matrix factorization technique that reduces dimensionality to discover latent features in the user-item interaction matrix.
 
 ## Dataset
-The application uses the MovieLens 100K dataset containing:
+The application uses the [MovieLens 100K dataset](https://grouplens.org/datasets/movielens/) containing:
 
 - User ratings
 - Movie metadata
 - User information
+
+I have cleaned and preprocessed the data from MovieLens and added as following three files in the repository:
+
+- users_cleaned.csv: contains features user_id, age, gender, occupation
+- ratings_cleaned.csv: contains user_id, item_id, rating, rating_datetime
+- movies_cleaned.csv: contains item_id, title, release_date, and 19 genre features
 
 ## Usage
 Launch the application following the installation steps
