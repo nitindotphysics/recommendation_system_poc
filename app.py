@@ -240,7 +240,7 @@ def movie_details_table(title: str):
     fields.append("genres"); values.append(genres_str)
     # A few other useful fields if present
     for k in ["release_date", "year", "imdb_url", "movie_id", "movieId", "id"]:
-        if k in row.index:
+        if k in row.index: 
             fields.append(k); values.append(row.get(k))
     return pd.DataFrame({"Field": fields, "Value": values})
 
